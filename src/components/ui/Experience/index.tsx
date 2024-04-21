@@ -37,9 +37,9 @@ const Experience = () => {
                         <span className="flex-1 font-semibold mb-2">{exp.role}</span>
                         <span className="mr-4"><Tags tags={[exp.workload || ""]}></Tags></span>
                     </div>
-                    <div className="flex gap-3 text-sm mb-3">
+                    <div className="flex-col sm:flex-row flex gap-3 text-sm mb-3">
                         <span className="flex flex-row gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5">
                                 <path fill="currentColor" d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z"></path>
                             </svg>
                             {exp.company}
