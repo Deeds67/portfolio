@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Introduction = () => {
 
-  const tags = ["React", "Kotlin", "React", "Kotlin","React", "Kotlin","React", "Kotlin"]
+  const tags = ["Kotlin", "React", "Scala", "Typescript", "Python", "PostgreSQL", "Kafka","Kubernetes", "Docker", "LLM", "RAG", "Transformers"]
 
     return (
         <div className="self-auto">
@@ -15,7 +15,7 @@ const Introduction = () => {
                 <p className="font-semibold pl-5 text-lg mb-1">Pierre Marais</p>
                 <p className="pl-5 mb-5">Senior Software Engineer - DE</p>
                 <div className="text-sm bg-gray-50 rounded-lg p-5">
-                    Experienced Software Engineer with 9+ years of experience and a track record of delivering distributed, scalable solutions. Strong in Kotlin, React, Typescript, NextJS, Kafka, PostgreSQL, Docker and Kubernetes. 
+                    Experienced Software Engineer with 9+ years of experience and a track record of delivering distributed, scalable solutions.
                     <div className="my-4">
                         <Tags tags={tags}></Tags>
                     </div>
