@@ -1,9 +1,12 @@
+import { ReactNode } from "react";
+
 
 interface Props {
-    text: String
+    children?: ReactNode
+    className?: string
 }
 
-const Button = ({ children, ...props }) => (
+const Button = ({ children, ...props }: Props) => (
     <button
         role="button"
         {...props}
