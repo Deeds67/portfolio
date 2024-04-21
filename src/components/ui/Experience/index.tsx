@@ -25,7 +25,7 @@ const Experience = () => {
         }
     ]
     return (
-    <div className="max-w-xl flex flex-col rounded-xl bg-white p-2">
+    <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-2">
         <ul className="list-disc pl-9">
             <li className="my-3 text-lg font-semibold">Experience</li>
         </ul>

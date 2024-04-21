@@ -9,7 +9,7 @@ interface Props {
 const AboutMe = (props: Props) => {
 
     return (
-        <div className="max-w-xs bg-white rounded-xl p-2">
+        <div className="lg:max-w-xs bg-white rounded-xl p-2">
             <div className="flex justify-center my-3">
                 <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-gray-400"></Image>
             </div>

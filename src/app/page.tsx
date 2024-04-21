@@ -5,8 +5,8 @@ import Image from "next/image";
 export default function Home() {
   const tags = ["React", "Kotlin", "React", "Kotlin","React", "Kotlin","React", "Kotlin"]
   return (
-    <main className="min-h-screen  p-24 ">
-      <div className="flex flex-start justify-center gap-3">
+    <main className="min-h-screen p-5 xs:p-24">
+      <div className="flex flex-col lg:flex-row justify-center gap-3">
         <AboutMe tags={tags}></AboutMe>
         <Experience></Experience>
       </div>
