@@ -6,7 +6,7 @@ interface Props {
     tags: string[]
 }
 
-const AboutMe = (props: Props) => {
+const Introduction = (props: Props) => {
 
     return (
         <div className="self-auto">
@@ -34,4 +34,4 @@ const AboutMe = (props: Props) => {
     )
 }
 
-export default AboutMe
+export default Introduction
