@@ -34,7 +34,9 @@ const Education = () => {
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
                 
                 <div className="flex-1">
-                    <span className="flex-1 font-semibold mb-2">{exp.name}</span>
+                    <div className="mb-3">
+                        <span className="font-semibold">{exp.name}</span>
+                    </div>
                     <div className="flex-col sm:flex-row flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
                         <span className="flex flex-row gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
