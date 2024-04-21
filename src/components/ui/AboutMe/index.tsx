@@ -15,7 +15,7 @@ const AboutMe = (props: Props) => {
             </div>
             <p className="font-semibold pl-5 text-lg mb-1">Pierre Marais</p>
             <p className="pl-5 mb-5">Senior Software Engineer - DE</p>
-            <div className="text-sm bg-gray-50 rounded p-5">
+            <div className="text-sm bg-gray-50 rounded-lg p-5">
                 Software engineer with 9+ years of experience in building web apps. Skilled in Kotlin, React, Python, Typescript, PostgreSQL, Kafka and Kubernetes.
                 <div className="my-4">
                     <Tags tags={props.tags}></Tags>
