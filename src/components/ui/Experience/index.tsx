@@ -35,7 +35,7 @@ const Experience = () => {
         },
         {
             role: "Software Engineer",
-            company: "Nintex (formerly K2)",
+            company: "Nintex",
             location: "Johannesburg, ZA",
             workload: "Full-time",
             from: "Jan 2015",
