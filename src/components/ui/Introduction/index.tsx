@@ -12,8 +12,7 @@ const Introduction = () => {
                 <div className="flex justify-center my-3">
                     <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-blue-500"></Image>
                 </div>
-                <p className="font-semibold pl-5 text-lg mb-1">Pierre Marais</p>
-                <p className="pl-5 mb-5">Senior Software Engineer - DE</p>
+                <p className="flex justify-center font-semibold text-xl mb-3">Pierre Marais</p>
                 <div className="text-sm bg-gray-50 rounded-lg p-5">
                     Experienced Software Engineer with 9+ years of experience and a track record of delivering distributed, scalable solutions.
                     <div className="my-4">
