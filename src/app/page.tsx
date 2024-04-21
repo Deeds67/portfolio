@@ -3,11 +3,10 @@ import Experience from "@/components/ui/Experience";
 import Image from "next/image";
 
 export default function Home() {
-  const tags = ["React", "Kotlin", "React", "Kotlin","React", "Kotlin","React", "Kotlin"]
   return (
     <main className="min-h-screen p-5 xs:p-24">
       <div className="flex flex-col lg:flex-row justify-center gap-3">
-        <Introduction tags={tags}></Introduction>
+        <Introduction></Introduction>
         <Experience></Experience>
       </div>
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">

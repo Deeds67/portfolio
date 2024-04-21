@@ -2,11 +2,9 @@ import Button from "../Button"
 import Tags from "../Tags"
 import Image from "next/image"
 
-interface Props {
-    tags: string[]
-}
+const Introduction = () => {
 
-const Introduction = (props: Props) => {
+  const tags = ["React", "Kotlin", "React", "Kotlin","React", "Kotlin","React", "Kotlin"]
 
     return (
         <div className="self-auto">
@@ -19,7 +17,7 @@ const Introduction = (props: Props) => {
                 <div className="text-sm bg-gray-50 rounded-lg p-5">
                     Experienced Software Engineer with 9+ years of experience and a track record of delivering distributed, scalable solutions. Strong in Kotlin, React, Typescript, NextJS, Kafka, PostgreSQL, Docker and Kubernetes. 
                     <div className="my-4">
-                        <Tags tags={props.tags}></Tags>
+                        <Tags tags={tags}></Tags>
                     </div>
                     <div>
                     <Button className="flex justify-center items-center gap-3 w-full text-white bg-blue-600 hover:bg-blue-500 ring-offset-2 ring-blue-600 focus:ring shadow rounded-lg">
