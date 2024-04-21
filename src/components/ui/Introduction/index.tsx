@@ -18,13 +18,13 @@ const Introduction = () => {
                     <div className="my-4">
                         <Tags tags={tags}></Tags>
                     </div>
-                    <div>
-                    <Button className="flex justify-center items-center gap-3 w-full text-white bg-blue-600 hover:bg-blue-500 ring-offset-2 ring-blue-600 focus:ring shadow rounded-lg">
-                        Download CV
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
-                                        <path fill="currentColor" d="M13 10h5l-6 6l-6-6h5V3h2zm-9 9h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2z"></path></svg>
-                    </Button>
-                    </div>
+                    <a href="/PierreMaraisCV.pdf" download="PierreMaraisCV">
+                        <Button className="flex justify-center items-center gap-3 w-full text-white bg-blue-600 hover:bg-blue-500 ring-offset-2 ring-blue-600 focus:ring shadow rounded-lg">
+                            Download CV
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
+                                            <path fill="currentColor" d="M13 10h5l-6 6l-6-6h5V3h2zm-9 9h16v-7h2v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8h2z"></path></svg>
+                        </Button>
+                    </a>
                 </div>
             </div>
         </div>
