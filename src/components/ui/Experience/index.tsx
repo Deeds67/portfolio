@@ -50,7 +50,7 @@ const Experience = () => {
             workload: "Full-time",
             from: "Jan 2015",
             to: "May 2016",
-            description: "Developed Robo-advisor solutions to registered investment advisors and broker-dealers.",
+            description: "GamingVPN provided VPN solutions, mainly used by university students, enabling unrestricted internet access on campus computer networks.",
             logo: ""
         }
     ]
