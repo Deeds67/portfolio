@@ -11,7 +11,7 @@ const AboutMe = (props: Props) => {
     return (
         <div className="max-w-xs bg-white rounded-xl p-2">
             <div className="flex justify-center my-3">
-                <Image src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-gray-400"></Image>
+                <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-gray-400"></Image>
             </div>
             <p className="font-semibold pl-5 text-lg mb-1">Pierre Marais</p>
             <p className="pl-5 mb-5">Senior Software Engineer - DE</p>
