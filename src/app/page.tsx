@@ -1,12 +1,15 @@
 import Introduction from "@/components/ui/Introduction";
 import Experience from "@/components/ui/Experience";
-import Image from "next/image";
+import AboutMe from "@/components/ui/AboutMe";
 
 export default function Home() {
   return (
     <main className="min-h-screen p-5 xs:p-24">
       <div className="flex flex-col lg:flex-row justify-center gap-3">
-        <Introduction></Introduction>
+        <div className="flex flex-col gap-3">
+          <Introduction></Introduction>
+          <AboutMe></AboutMe>
+        </div>
         <Experience></Experience>
       </div>
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
