@@ -1,17 +1,19 @@
 import Image from "next/image"
 import Tags from "../Tags"
+import Link from "next/link"
 
 const Experience = () => {
     const experiences = [
         {
-            role: "Founder",
+            role: "Co-Founder",
             company: "Tresor-AI",
             location: "Berlin, DE",
             workload: "Full-time",
             from: "Jun 2023",
             to: "Present",
             description: "Tresor AI provides companies with a GDPR compliant chat-bot that uses open-source LLM models combined with RAG, enabling companies to have intelligent querying of internal documentation.",
-            logo: "/tresor-ai.png"
+            logo: "/tresor-ai.png",
+            url: "https://www.tresor-ai.com"
         },
         {
             role: "Senior Software Engineer",
@@ -21,7 +23,8 @@ const Experience = () => {
             from: "Jun 2018",
             to: "Feb 2023",
             description: "Enabled warehouses to process several million items every day by developing an Event Driven Warehouse Management System for key processes such as tour processing, receiving, sorting, stowing, outbound handling, returns, and refurbishment.",
-            logo: "/zalando_logo.png"
+            logo: "/zalando_logo.png",
+            url: "https://www.zalando.de"
         },
         {
             role: "Software Engineer",
@@ -31,7 +34,8 @@ const Experience = () => {
             from: "Jun 2016",
             to: "May 2018",
             description: "Developed Robo-advisor solutions to registered investment advisors and broker-dealers.",
-            logo: "/invesco_ltd_logo.jpeg"
+            logo: "/invesco_ltd_logo.jpeg",
+            url: "https://www.invesco.com"
         },
         {
             role: "Software Engineer",
@@ -41,7 +45,8 @@ const Experience = () => {
             from: "Jan 2015",
             to: "May 2016",
             description: "DevOps focused role - reduced build times from 4 hours to 45 minutes.",
-            logo: "/k2_logo.jpeg"
+            logo: "/k2_logo.jpeg",
+            url: "https://www.nintext.com"
         },
         {
             role: "Founder",
@@ -61,7 +66,9 @@ const Experience = () => {
         </ul>
         {experiences.map((exp, index) => 
             <div key={index} className="flex items-start bg-gray-100 m-1 rounded-lg py-4">
-                <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>
+                {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
+                {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
+                
                 <div className="flex-1">
                     <div className="flex flex-space-between">
                         <span className="flex-1 font-semibold mb-2">{exp.role}</span>
@@ -72,7 +79,8 @@ const Experience = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
                                 <path fill="currentColor" d="M7 5V2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM4 16v3h16v-3zm0-2h16V7H4zM9 3v2h6V3zm2 8h2v2h-2z"></path>
                             </svg>
-                            {exp.company}
+                            {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer">{exp.company}</a>}
+                            {!exp.url && <span>{exp.company}</span>}
                         </span>
                         <span className="flex flex-row gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
