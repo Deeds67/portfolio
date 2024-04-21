@@ -51,7 +51,7 @@ const Experience = () => {
             from: "Jan 2015",
             to: "May 2016",
             description: "GamingVPN provided VPN solutions, mainly used by university students, enabling unrestricted internet access on campus computer networks.",
-            logo: ""
+            logo: "/gamingvpn_logo.png"
         }
     ]
     return (
