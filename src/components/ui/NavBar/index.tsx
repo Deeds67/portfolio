@@ -13,10 +13,10 @@ const NavBar = () => {
             "display_name" : "Projects",
             "url" : "/projects"
         },
-        {
-            "display_name" : "Blog",
-            "url" : "/blog"
-        }
+        // {
+        //     "display_name" : "Blog",
+        //     "url" : "/blog"
+        // }
     ]
 
     const pathname = usePathname()
