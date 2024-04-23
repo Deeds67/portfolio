@@ -22,8 +22,8 @@ const NavBar = () => {
     const pathname = usePathname()
 
     return (
-        <header className="sticky top-0 mx-auto z-50">
-            <nav className="flex mb-3">
+        <header className="sticky top-0 mx-auto z-50 border-b-2 border-b-gray">
+            <nav className="flex">
                 <div className="flex flex-1 bg-white justify-center">
                     {navbaritems.map((item, index) => (
                         <NavBarItem key={index} isActive={item.url == pathname} target={item.url}>{item.display_name}</NavBarItem>
