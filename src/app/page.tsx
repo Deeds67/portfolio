@@ -10,12 +10,12 @@ export default function Home() {
       <NavBar></NavBar>
       <div className="flex flex-col lg:flex-row justify-center gap-3 pb-3">
         <div className="flex flex-col gap-3">
-            <Introduction></Introduction>
-            <AboutMe></AboutMe>
+          <Introduction></Introduction>
+          <AboutMe></AboutMe>
         </div>
         <div className="flex flex-col gap-3">
-        < Experience></Experience>
-<           Education></Education>
+          <Experience></Experience>
+          <Education></Education>
         </div>
       </div>
     </main>
