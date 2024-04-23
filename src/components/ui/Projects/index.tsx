@@ -83,16 +83,14 @@ const Projects = () => {
                 <li className="my-3 text-lg font-semibold">Projects</li>
             </ul>
             {projects.map((project, index) => 
-            <div key={index} className="flex items-start bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
-                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
+            <div key={index} className="flex bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
+                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!project.url && <Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image>}
                 
                 <div className="flex-1">
-                    <div className="flex flex-space-between">
-                        <span className="flex-1 font-semibold mb-2">{project.company}</span>
-                    </div>
-                    <div className="flex-col sm:flex-row flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
-                        <span className="flex flex-row gap-2">
+                    <div className="font-semibold mb-2">{project.company}</div>
+                    <div className="sm:flex-row flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
+                        <span className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
                                 <path fill="currentColor" d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z"></path>
                             </svg>
@@ -103,7 +101,7 @@ const Projects = () => {
                         {project.description}
                     </div>
                     {project.tags && <Tags tags={project.tags} className="my-2"></Tags>}
-                    <a className="flex gap-3 mt-3" target="_blank" href={project.url} rel="noopener noreferrer">
+                    <a className="flex mt-4 gap-1 text-xs sm:text-sm font-medium" target="_blank" href={project.url} rel="noopener noreferrer">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
                             <path fill="currentColor" d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm11-3v8h-2V6.413l-7.793 7.794l-1.414-1.414L17.585 5H13V3z"></path>
                         </svg>
