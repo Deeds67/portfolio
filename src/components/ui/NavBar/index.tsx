@@ -22,15 +22,15 @@ const NavBar = () => {
     const pathname = usePathname()
 
     return (
-        <header className="mx-auto">
-            <div className="flex mb-3">
+        <header className="sticky top-0 mx-auto z-50">
+            <nav className="flex mb-3">
                 <div className="flex flex-1 bg-white justify-center">
                     {navbaritems.map((item, index) => (
                         <NavBarItem key={index} isActive={item.url == pathname} target={item.url}>{item.display_name}</NavBarItem>
                     ))
                 }
                 </div>
-            </div>
+            </nav>
         </header>
     )
 }
