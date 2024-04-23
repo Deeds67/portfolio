@@ -86,10 +86,9 @@ const Projects = () => {
             <div key={index} className="flex bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
                 {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!project.url && <Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image>}
-                
-                <div className="flex-1">
+                <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
                     <div className="font-semibold mb-2">{project.company}</div>
-                    <div className="sm:flex-row flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
+                    <div className="flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
                         <span className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
                                 <path fill="currentColor" d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z"></path>

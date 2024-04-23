@@ -69,7 +69,7 @@ const Experience = () => {
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
                 
-                <div className="flex-1">
+                <div className="flex-1" style={{overflowWrap: "anywhere"}}>
                     <div className="flex flex-space-between">
                         <span className="flex-1 font-semibold mb-2">{exp.role}</span>
                         <span className="mr-4"><Tags tags={[exp.workload || ""]}></Tags></span>
