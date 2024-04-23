@@ -24,9 +24,9 @@ const NavBar = () => {
     return (
         <header className="mx-auto">
             <div className="flex mb-3">
-                <div className="flex flex-1 bg-white justify-center pt-5">
+                <div className="flex flex-1 bg-white justify-center">
                     {navbaritems.map((item, index) => (
-                        <NavBarItem key={index} isActive={item.url == pathname}>{item.display_name}</NavBarItem>
+                        <NavBarItem key={index} isActive={item.url == pathname} target={item.url}>{item.display_name}</NavBarItem>
                     ))
                 }
                 </div>
