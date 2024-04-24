@@ -9,7 +9,7 @@ const Projects = () => {
             description: "Built & open sourced this portfolio website",
             tags: ["React", "Next.js", "TailwindCSS", "TypeScript"],
             logo: "/linkedinprofilepic.jpeg",
-            url: "https://github.com/Deeds67/blog/"
+            url: "https://github.com/Deeds67/portfolio/"
         },
         {
             company: "Tresor-AI",
