@@ -1,4 +1,4 @@
-# Portfolio/blog template
+# Portfolio template
 
 This is a portfolio template created in NextJS, Typescript & TailwindCSS.
 Feel free to clone/fork and use the template as you wish.
