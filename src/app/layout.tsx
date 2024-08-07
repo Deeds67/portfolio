@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Head from "next/head"
+import NavBar from "@/components/ui/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <link rel='icon' href='/linkedinprofilepic.jpeg' />
       </Head>
       <body className={`${inter.className}`}>
+        <NavBar></NavBar>
         {children}
         <SpeedInsights />
       </body>
