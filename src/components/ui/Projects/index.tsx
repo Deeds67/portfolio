@@ -4,20 +4,20 @@ import Tags from "../Tags"
 const Projects = () => {
     const projects = [
         {
+            company: "Pragmatic Interview",
+            date: "Aug 2024",
+            description: "Built an educational platform offering curated questions on all software engineering topics, along with an AI assistant to help people land their dream job as a software engineer.",
+            tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "ChatGPT", "LLM"],
+            logo: "/pi_logo.png",
+            url: "https://www.pragmaticinterview.com"
+        },
+        {
             company: "Portfolio",
             date: "Apr 2024",
             description: "Built & open sourced this portfolio website",
             tags: ["React", "Next.js", "TailwindCSS", "TypeScript"],
             logo: "/linkedinprofilepic.jpeg",
             url: "https://github.com/Deeds67/portfolio/"
-        },
-        {
-            company: "Tresor-AI",
-            date: "Apr 2024",
-            description: "Built a modern & responsive landing page for Tresor-AI.",
-            tags: ["React", "Next.js", "TailwindCSS", "TypeScript"],
-            logo: "/tresor-ai.png",
-            url: "https://www.tresor-ai.com/"
         },
         {
             company: "Rolling-Aggregator",
