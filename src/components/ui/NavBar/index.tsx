@@ -3,22 +3,18 @@
 import NavBarItem from '../NavBarItem'
 import { usePathname } from 'next/navigation'
 
-const NavBar = () => {
-    const navbaritems = [
-        { 
-            "display_name" : "Home",
-            "url" : "/"
-        },
-        {
-            "display_name" : "Projects",
-            "url" : "/projects"
-        },
-        // {
-        //     "display_name" : "Blog",
-        //     "url" : "/blog"
-        // }
-    ]
+const navbaritems = [
+    { 
+        "display_name" : "Home",
+        "url" : "/"
+    },
+    {
+        "display_name" : "Projects",
+        "url" : "/projects"
+    },
+]
 
+const NavBar = () => {
     const pathname = usePathname()
 
     return (

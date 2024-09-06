@@ -2,10 +2,9 @@ import Button from "../Button"
 import Tags from "../Tags"
 import Image from "next/image"
 
+const tags = ["Kotlin", "React", "Scala", "Typescript", "Python", "PostgreSQL", "Kafka","Kubernetes", "Docker", "LLM", "RAG", "Transformers"]
+
 const Introduction = () => {
-
-  const tags = ["Kotlin", "React", "Scala", "Typescript", "Python", "PostgreSQL", "Kafka","Kubernetes", "Docker", "LLM", "RAG", "Transformers"]
-
     return (
         <div className="self-auto">
             <div className="lg:max-w-xs bg-white rounded-xl pb-2">

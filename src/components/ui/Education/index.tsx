@@ -1,28 +1,28 @@
 import Image from "next/image"
 
-const Education = () => {
-    const studies = [
-        {
-            name: "Bachelor of Science in Computer Science",
-            company: "North-West University",
-            location: "Potchefstroom, ZA",
-            url: "https://www.nwu.ac.za/",
-            from: "2014",
-            logo: "/nwu_logo.png",
-            description: "Completed my Honours Degree in Computer Science cum laude at the North-West University."
-        },
-        {
-            name: "Bachelor of Science in Information Technology",
-            company: "North-West University",
-            location: "Potchefstroom, ZA",
-            url: "https://www.nwu.ac.za/",
-            from: "2011",
-            to: "2013",
-            logo: "/nwu_logo.png",
-            description: "Completed my Bachelor's Degree in Information Technology cum laude at the North-West University. Received an award for achieving the highest overall academic score during the three year B.Sc degree."
-        },
-    ]
+const studies = [
+    {
+        name: "Bachelor of Science in Computer Science",
+        company: "North-West University",
+        location: "Potchefstroom, ZA",
+        url: "https://www.nwu.ac.za/",
+        from: "2014",
+        logo: "/nwu_logo.png",
+        description: "Completed my Honours Degree in Computer Science cum laude at the North-West University."
+    },
+    {
+        name: "Bachelor of Science in Information Technology",
+        company: "North-West University",
+        location: "Potchefstroom, ZA",
+        url: "https://www.nwu.ac.za/",
+        from: "2011",
+        to: "2013",
+        logo: "/nwu_logo.png",
+        description: "Completed my Bachelor's Degree in Information Technology cum laude at the North-West University. Received an award for achieving the highest overall academic score during the three year B.Sc degree."
+    },
+]
 
+const Education = () => {
     return (
         <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
             <ul className="list-disc pl-9">
