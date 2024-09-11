@@ -3,12 +3,23 @@ import Tags from "../Tags"
 
 const experiences = [
     {
+        role: "Senior Software Engineer",
+        company: "Freelance",
+        location: "Berlin, DE",
+        workload: "Full-time",
+        from: "Jun 2024",
+        to: "Present",
+        description: "Experienced software engineer with expertise in building scalable, event-driven microservices and AI-powered applications. Proficient in developing solutions using a diverse tech stack. Strong background in leading new technical projects, mentoring engineers, and maintaining and improving legacy systems.",
+        logo: "/linkedinprofilepic.jpeg",
+        url: "https://www.pierremarais.de"
+    },
+    {
         role: "Co-Founder",
         company: "Tresor-AI",
         location: "Berlin, DE",
         workload: "Full-time",
         from: "Jun 2023",
-        to: "Present",
+        to: "May 2024",
         description: "Tresor AI provides companies with a GDPR compliant chat-bot that uses open-source LLM models combined with RAG, enabling companies to have intelligent querying of internal documentation.",
         logo: "/tresor-ai.png",
         url: "https://www.tresor-ai.com"
