@@ -11,7 +11,8 @@ const experiences = [
         to: "Present",
         description: "Experienced software engineer with expertise in building scalable, event-driven microservices and AI-powered applications. Proficient in developing solutions using a diverse tech stack. Strong background in leading new technical projects, mentoring engineers, and maintaining and improving legacy systems.",
         logo: "/linkedinprofilepic.jpeg",
-        url: "https://www.pierremarais.de"
+        url: "https://www.pierremarais.de",
+        tags: ["Kotlin", "TypeScript", "Ktor", "React", "Next.js", "TailwindCSS", "Docker"],
     },
     {
         role: "Co-Founder",
@@ -22,7 +23,9 @@ const experiences = [
         to: "May 2024",
         description: "Tresor AI provides companies with a GDPR compliant chat-bot that uses open-source LLM models combined with RAG, enabling companies to have intelligent querying of internal documentation.",
         logo: "/tresor-ai.png",
-        url: "https://www.tresor-ai.com"
+        url: "https://www.tresor-ai.com",
+        tags: ["Python", "TypeScript", "Llama-Index", "FastAPI", "LLM", "RAG", "Next.js", "TailwindCSS"],
+
     },
     {
         role: "Senior Software Engineer",
@@ -33,7 +36,8 @@ const experiences = [
         to: "Feb 2023",
         description: "Enabled warehouses to process several million items every day by developing an Event Driven Warehouse Management System for key processes such as tour processing, receiving, sorting, stowing, outbound handling, returns, and refurbishment.",
         logo: "/zalando_logo.png",
-        url: "https://www.zalando.de"
+        url: "https://www.zalando.de",
+        tags: ["Kotlin", "TypeScript", "Kafka", "React", "PostgreSQL", "Scala", "Kubernetes", "Docker"]
     },
     {
         role: "Software Engineer",
@@ -44,7 +48,9 @@ const experiences = [
         to: "May 2018",
         description: "Developed Robo-advisor solutions to registered investment advisors and broker-dealers.",
         logo: "/invesco_ltd_logo.jpeg",
-        url: "https://www.invesco.com"
+        url: "https://www.invesco.com",
+        tags: ["Scala", "Akka", "MongoDB", "JavaScript", "Play Framework", "Docker"]
+
     },
     {
         role: "Software Engineer",
@@ -55,7 +61,9 @@ const experiences = [
         to: "May 2016",
         description: "DevOps focused role - reduced build times from 4 hours to 45 minutes.",
         logo: "/k2_logo.jpeg",
-        url: "https://www.nintext.com"
+        url: "https://www.nintext.com",
+        tags: ["C#", "C++/CLI", "MSSQL"]
+
     },
     {
         role: "Founder",
@@ -65,7 +73,8 @@ const experiences = [
         from: "Jan 2015",
         to: "May 2016",
         description: "GamingVPN provided VPN solutions, mainly used by university students, enabling unrestricted internet access on campus computer networks.",
-        logo: "/gamingvpn_logo.png"
+        logo: "/gamingvpn_logo.png",
+        tags: ["C#", "ASP.NET MVC", "OpenVPN", "Apache"]
     }
 ]
 
@@ -109,6 +118,7 @@ const Experience = () => {
                     <div className="pr-5 text-slate-700">
                         {exp.description}
                     </div>
+                    {exp.tags && <Tags tags={exp.tags} className="my-2"></Tags>}
                 </div>
             </div>
         )}
