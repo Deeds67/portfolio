@@ -70,8 +70,8 @@ const experiences = [
         company: "GamingVPN",
         location: "Potchefstroom, ZA",
         workload: "Full-time",
-        from: "Jan 2015",
-        to: "May 2016",
+        from: "Feb 2013",
+        to: "Jul 2015",
         description: "GamingVPN provided VPN solutions, mainly used by university students, enabling unrestricted internet access on campus computer networks.",
         logo: "/gamingvpn_logo.png",
         tags: ["C#", "ASP.NET MVC", "OpenVPN", "Apache"]
