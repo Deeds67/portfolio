@@ -4,15 +4,15 @@ import Tags from "../Tags"
 const experiences = [
     {
         role: "Senior Software Engineer",
-        company: "Freelance",
+        company: "DigitalService",
         location: "Berlin, DE",
         workload: "Full-time",
-        from: "Jun 2024",
+        from: "Dec 2024",
         to: "Present",
-        description: "Experienced software engineer with expertise in building scalable, event-driven microservices and AI-powered applications. Proficient in developing solutions using a diverse tech stack. Strong background in leading new technical projects, mentoring engineers, and maintaining and improving legacy systems.",
-        logo: "/linkedinprofilepic.jpeg",
+        description: "Building a communication platform for the Federal Ministry of Justice that allows for civil law cases to be submitted online, enabling fully online civil court proceedings in Germany. This platform streamlines case management and improves access to justice through digitalization.",
+        logo: "/digitalservice_logo.jpeg",
         url: "https://www.pierremarais.de",
-        tags: ["Kotlin", "TypeScript", "Ktor", "React", "Next.js", "TailwindCSS", "Docker"],
+        tags: ["Typescript", "Remix", "React", "Kotlin", "TailwindCSS", "Docker", "Kubernetes"],
     },
     {
         role: "Co-Founder",
