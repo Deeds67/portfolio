@@ -13,7 +13,7 @@ const Introduction = () => {
                 </div>
                 <p className="flex justify-center font-semibold text-xl mb-3">Pierre Marais</p>
                 <div className="text-sm bg-gray-50 rounded-lg p-5 mx-2">
-                    Experienced Software Engineer with 9+ years of experience and a track record of delivering distributed, scalable solutions.
+                    Experienced Software Engineer with 10+ years of experience and a track record of delivering distributed, scalable solutions.
                     <div className="my-4">
                         <Tags tags={tags}></Tags>
                     </div>
