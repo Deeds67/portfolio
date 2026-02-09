@@ -4,6 +4,18 @@ import Tags from "../Tags"
 const experiences = [
     {
         role: "Senior Software Engineer",
+        company: "Contentful",
+        location: "Berlin, DE",
+        workload: "Full-time",
+        from: "Jun 2025",
+        to: "Present",
+        description: "Search & Discoverability team.",
+        logo: "/contentful_logo.png",
+        url: "https://www.contentful.com",
+        tags: ["Typescript", "AWS", "Kubernetes", "PostgreSQL", "React", "Kafka"],
+    },
+    {
+        role: "Senior Software Engineer",
         company: "DigitalService",
         location: "Berlin, DE",
         workload: "Full-time",
