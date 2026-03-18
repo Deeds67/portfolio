@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${dmSans.variable}`}>
         <Script
           src="https://cloud.umami.is/script.js"
-          data-website-id="4f41e469-2947-48c8-9602-575c66ea4f50"
+          data-website-id="8ba41da7-1cce-4aa4-b81b-ddae040b32c1"
           strategy="afterInteractive"
         />
         <NavBar></NavBar>
