@@ -79,11 +79,9 @@ const projects = [
 const Projects = () => {
     return (
         <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
-            <ul className="list-disc pl-9">
-                <li className="my-3 text-lg font-semibold">Projects</li>
-            </ul>
-            {projects.map((project, index) => 
-            <div key={index} className="flex bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
+            <h2 className="my-3 ml-4 text-lg font-semibold">Projects</h2>
+            {projects.map((project, index) =>
+            <div key={index} className="flex bg-gray-50 hover:bg-gray-100 m-1 mb-2 rounded-lg py-4">
                 {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!project.url && <Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image>}
                 <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
