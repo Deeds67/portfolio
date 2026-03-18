@@ -95,7 +95,7 @@ const Experience = () => {
     <div className="lg:max-w-xl flex flex-col gap-2">
         <h2 className="ml-1 text-lg font-semibold">Experience</h2>
         {experiences.map((exp, index) =>
-            <div key={index} className="flex items-start bg-white hover:bg-gray-50 rounded-xl p-4">
+            <div key={index} className="flex items-start bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
                 
