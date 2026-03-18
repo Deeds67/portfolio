@@ -5,9 +5,9 @@ const projects = [
     {
         company: "Noodle Gallery",
         date: "Mar 2025",
-        description: "An open-source, self-hosted photo and video gallery. Privacy-first alternative to cloud photo services with AI-powered search, facial recognition, and automatic organisation.",
-        tags: ["TypeScript", "React", "Next.js", "TailwindCSS", "Python", "FastAPI", "PostgreSQL", "Docker"],
-        logo: "/github.png",
+        description: "A high-performance, self-hosted photo and video management solution. Features AI-powered search, facial recognition, and mobile apps for iOS and Android.",
+        tags: ["TypeScript", "Svelte", "NestJS", "Flutter", "PostgreSQL", "Python", "Astro", "Docker", "S3"],
+        logo: "/opennoodle_logo.png",
         url: "https://opennoodle.de"
     },
     {
