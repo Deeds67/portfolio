@@ -24,10 +24,10 @@ const studies = [
 
 const Education = () => {
     return (
-        <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
-            <h2 className="my-3 ml-4 text-lg font-semibold">Education</h2>
-            {studies.map((exp, index) => 
-            <div key={index} className="flex items-start bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
+        <div className="lg:max-w-xl flex flex-col gap-2">
+            <h2 className="ml-1 text-lg font-semibold">Education</h2>
+            {studies.map((exp, index) =>
+            <div key={index} className="flex items-start bg-white hover:bg-gray-50 rounded-xl p-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
                 

@@ -78,10 +78,10 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
-            <h2 className="my-3 ml-4 text-lg font-semibold">Projects</h2>
+        <div className="lg:max-w-xl flex flex-col gap-2">
+            <h2 className="ml-1 text-lg font-semibold">Projects</h2>
             {projects.map((project, index) =>
-            <div key={index} className="flex bg-gray-50 hover:bg-gray-100 m-1 mb-2 rounded-lg py-4">
+            <div key={index} className="flex bg-white hover:bg-gray-50 rounded-xl p-4">
                 {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!project.url && <Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image>}
                 <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
