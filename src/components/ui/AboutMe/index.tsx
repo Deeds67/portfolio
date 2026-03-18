@@ -9,7 +9,7 @@ const AboutMe = () => {
 
                 <div className="text-sm bg-gray-50 rounded-lg p-5 m-1">
                     I really enjoy working with motivated people to solve real-world problems. My approach to software engineering is very pragmatic. I am technology agnostic and believe that the best tool is the one that the team is most comfortable with.
-                    <hr className="my-5"></hr>
+                    <hr className="my-5 border-gray-200"></hr>
                     <div className="flex gap-3 font-medium">
                         <div className="flex flex-col gap-3 justify-center">
                             <a href="https://github.com/deeds67" target="_blank" rel="noopener noreferrer">

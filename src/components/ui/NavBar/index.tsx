@@ -18,7 +18,7 @@ const NavBar = () => {
     const pathname = usePathname()
 
     return (
-        <header className="sticky top-0 mx-auto z-50 border-b-2 border-b-gray">
+        <header className="sticky top-0 mx-auto z-50 border-b-2 border-b-gray-200">
             <nav className="flex">
                 <div className="flex flex-1 bg-white justify-center">
                     {navbaritems.map((item, index) => (
