@@ -93,11 +93,9 @@ const experiences = [
 const Experience = () => {
     return (
     <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
-        <ul className="list-disc pl-9">
-            <li className="my-3 text-lg font-semibold">Experience</li>
-        </ul>
-        {experiences.map((exp, index) => 
-            <div key={index} className="flex items-start bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
+        <h2 className="my-3 ml-4 text-lg font-semibold">Experience</h2>
+        {experiences.map((exp, index) =>
+            <div key={index} className="flex items-start bg-gray-50 hover:bg-gray-100 m-1 mb-2 rounded-lg py-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
                 

@@ -3,9 +3,7 @@ const AboutMe = () => {
     return  (
         <div className="self-auto">
             <div className="lg:max-w-xs bg-white rounded-xl p-1">
-                <ul className="list-disc pl-9">
-                    <li className="my-3 text-lg font-semibold">About me</li>
-                </ul>
+                <h2 className="my-3 ml-4 text-lg font-semibold">About me</h2>
 
                 <div className="text-sm bg-gray-50 rounded-lg p-5 m-1">
                     I really enjoy working with motivated people to solve real-world problems. My approach to software engineering is very pragmatic. I am technology agnostic and believe that the best tool is the one that the team is most comfortable with.

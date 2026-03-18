@@ -25,9 +25,7 @@ const studies = [
 const Education = () => {
     return (
         <div className="lg:max-w-xl flex flex-col rounded-xl bg-white p-1">
-            <ul className="list-disc pl-9">
-                <li className="my-3 text-lg font-semibold">Education</li>
-            </ul>
+            <h2 className="my-3 ml-4 text-lg font-semibold">Education</h2>
             {studies.map((exp, index) => 
             <div key={index} className="flex items-start bg-gray-50 hover:bg-gray-100 m-1 rounded-lg py-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
