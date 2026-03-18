@@ -2,7 +2,7 @@
 const AboutMe = () => {
     return  (
         <div className="self-auto">
-            <div className="lg:max-w-xs bg-white rounded-xl p-1">
+            <div className="lg:max-w-xs bg-white shadow-sm rounded-xl p-1">
                 <h2 className="my-3 ml-4 text-lg font-semibold">About me</h2>
 
                 <div className="text-sm bg-gray-50 rounded-lg p-5 m-1">

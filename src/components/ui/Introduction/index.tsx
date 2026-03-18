@@ -7,7 +7,7 @@ const tags = ["Kotlin", "React", "Scala", "Typescript", "Python", "PostgreSQL", 
 const Introduction = () => {
     return (
         <div className="self-auto">
-            <div className="lg:max-w-xs bg-white rounded-xl pb-2">
+            <div className="lg:max-w-xs bg-white shadow-sm rounded-xl pb-2">
                 <div className="rounded-t-xl flex justify-center mb-3 bg-gradient-to-b from-blue-500 to-white-500">
                     <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-blue-500 mt-4"></Image>
                 </div>
