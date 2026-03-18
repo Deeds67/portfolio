@@ -91,8 +91,8 @@ const Projects = () => {
             <h2 className="ml-1 text-lg font-semibold border-l-3 border-blue-500 pl-2">Projects</h2>
             {projects.map((project, index) =>
             <div key={index} className={`flex bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4 ${project.shutdown ? "opacity-60" : ""}`}>
-                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className={`mx-2 rounded-full min-w-16 ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image></a>}
-                {!project.url && <Image className={`mx-2 rounded-full ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image>}
+                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className={`mx-2 rounded-lg min-w-16 ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image></a>}
+                {!project.url && <Image className={`mx-2 rounded-lg ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image>}
                 <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
                     <div className="flex items-center gap-2 mb-2">
                         <span className="font-semibold font-heading">{project.company}</span>
