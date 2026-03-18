@@ -93,7 +93,7 @@ const experiences = [
 const Experience = () => {
     return (
     <div className="lg:max-w-xl flex flex-col gap-2">
-        <h2 className="ml-1 text-lg font-semibold">Experience</h2>
+        <h2 className="ml-1 text-lg font-semibold border-l-3 border-blue-500 pl-2">Experience</h2>
         {experiences.map((exp, index) =>
             <div key={index} className="flex items-start bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
@@ -101,7 +101,7 @@ const Experience = () => {
                 
                 <div className="flex-1" style={{overflowWrap: "anywhere"}}>
                     <div className="flex flex-space-between">
-                        <span className="flex-1 font-semibold mb-2">{exp.role}</span>
+                        <span className="flex-1 font-semibold mb-2 font-heading">{exp.role}</span>
                         <span className="mr-4"><Tags tags={[exp.workload || ""]}></Tags></span>
                     </div>
                     <div className="flex-col sm:flex-row flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">

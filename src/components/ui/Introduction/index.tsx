@@ -8,10 +8,10 @@ const Introduction = () => {
     return (
         <div className="self-auto">
             <div className="lg:max-w-xs bg-white shadow-sm rounded-xl pb-2">
-                <div className="rounded-t-xl flex justify-center mb-3 bg-gradient-to-b from-blue-500 to-white-500">
-                    <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-blue-500 mt-4"></Image>
+                <div className="rounded-t-xl flex justify-center mb-3" style={{background: "linear-gradient(135deg, #3b82f6 0%, #6366f1 50%, #e0e7ff 100%)"}}>
+                    <Image alt="Profile Picture" src="/linkedinprofilepic.jpeg" width={150} height={150} className="rounded-full border-4 border-white/80 mt-4 shadow-lg"></Image>
                 </div>
-                <p className="flex justify-center font-semibold text-xl mb-3">Pierre Marais</p>
+                <p className="flex justify-center font-semibold text-xl mb-3 font-heading">Pierre Marais</p>
                 <div className="text-sm bg-gray-50 rounded-lg p-5 mx-2">
                     Experienced Software Engineer with 10+ years of experience and a track record of delivering distributed, scalable solutions.
                     <div className="my-4">

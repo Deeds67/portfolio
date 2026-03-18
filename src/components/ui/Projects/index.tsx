@@ -79,13 +79,13 @@ const projects = [
 const Projects = () => {
     return (
         <div className="lg:max-w-xl flex flex-col gap-2">
-            <h2 className="ml-1 text-lg font-semibold">Projects</h2>
+            <h2 className="ml-1 text-lg font-semibold border-l-3 border-blue-500 pl-2">Projects</h2>
             {projects.map((project, index) =>
             <div key={index} className="flex bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
                 {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!project.url && <Image className="mx-2 rounded-full" src={project.logo} width={70} height={70} alt="logo"></Image>}
                 <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
-                    <div className="font-semibold mb-2">{project.company}</div>
+                    <div className="font-semibold mb-2 font-heading">{project.company}</div>
                     <div className="flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
                         <span className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
