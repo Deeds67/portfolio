@@ -11,10 +11,11 @@ interface Props {
 const NavBarItem = ({ children, ...props }: Props) => {
     return (
         <Link href={props.target}>
-            <div className={`${props.className || ""}flex flex-1 justify-center hover:bg-gray-100 hover:border-b-4 ${!props.isActive && "hover:border-gray-100"} sm:flex-grow-0 min-w-20 sm:min-w-32 ${props.isActive && "border-b-4"} ${props.isActive && "border-blue-600"}`}>
-                    <div className="text-lg font-medium py-5">
+            <div className={`${props.className || ""}flex flex-1 justify-center hover:text-blue-600 transition-colors sm:flex-grow-0 min-w-20 sm:min-w-32 relative`}>
+                    <div className={`text-lg font-medium py-5 ${props.isActive ? "text-blue-600" : "text-gray-600"}`}>
                         {children}
                     </div>
+                    {props.isActive && <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-0.5 bg-blue-600 rounded-full"></div>}
             </div>
         </Link>
     )
