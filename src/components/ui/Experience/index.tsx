@@ -4,89 +4,39 @@ import Tags from "../Tags"
 const experiences = [
     {
         role: "Senior Software Engineer",
-        company: "Contentful",
-        location: "Berlin, DE",
+        company: "Acme Corp",
+        location: "Your City, Country",
         workload: "Full-time",
-        from: "Jun 2025",
+        from: "Jan 2024",
         to: "Present",
-        description: "Search & Discoverability team.",
-        logo: "/contentful_logo.png",
-        url: "https://www.contentful.com",
-        tags: ["Typescript", "AWS", "Kubernetes", "PostgreSQL", "React", "Kafka"],
-    },
-    {
-        role: "Senior Software Engineer",
-        company: "DigitalService",
-        location: "Berlin, DE",
-        workload: "Full-time",
-        from: "Dec 2024",
-        to: "May 2025",
-        description: "Worked with the Federal Ministry of Justice to build a platform that allows for civil law cases to be submitted online, enabling fully online civil court proceedings in Germany.",
-        logo: "/digitalservice_logo.jpeg",
-        url: "https://www.pierremarais.de",
-        tags: ["Typescript", "Remix", "React", "TailwindCSS", "Docker", "Kubernetes", "Grafana", "Sentry"],
-    },
-    {
-        role: "Co-Founder",
-        company: "Tresor-AI",
-        location: "Berlin, DE",
-        workload: "Full-time",
-        from: "Jun 2023",
-        to: "May 2024",
-        description: "Tresor AI provides companies with a GDPR compliant chat-bot that uses open-source LLM models combined with RAG, enabling companies to have intelligent querying of internal documentation.",
-        logo: "/tresor-ai.png",
-        tags: ["Python", "TypeScript", "Llama-Index", "FastAPI", "LLM", "RAG", "Next.js", "TailwindCSS"],
-
-    },
-    {
-        role: "Senior Software Engineer",
-        company: "Zalando",
-        location: "Berlin, DE",
-        workload: "Full-time",
-        from: "Jun 2018",
-        to: "Feb 2023",
-        description: "Enabled warehouses to process several million items every day by developing an Event Driven Warehouse Management System for key processes such as tour processing, receiving, sorting, stowing, outbound handling, returns, and refurbishment.",
-        logo: "/zalando_logo.png",
-        url: "https://www.zalando.de",
-        tags: ["Kotlin", "TypeScript", "Kafka", "React", "PostgreSQL", "Scala", "Kubernetes", "Docker"]
+        description: "Describe your role, responsibilities, and impact here. Focus on what you built and the outcomes you drove.",
+        logo: "/logo-placeholder.svg",
+        url: "https://example.com",
+        tags: ["TypeScript", "React", "Node.js", "PostgreSQL"],
     },
     {
         role: "Software Engineer",
-        company: "Invesco Ltd.",
-        location: "Johannesburg, ZA",
+        company: "Example Labs",
+        location: "Your City, Country",
         workload: "Full-time",
-        from: "Jun 2016",
-        to: "May 2018",
-        description: "Developed Robo-advisor solutions to registered investment advisors and broker-dealers.",
-        logo: "/invesco_ltd_logo.jpeg",
-        url: "https://www.invesco.com",
-        tags: ["Scala", "Akka", "MongoDB", "JavaScript", "Play Framework", "Docker"]
-
+        from: "Jun 2021",
+        to: "Dec 2023",
+        description: "A summary of what you worked on at this company — systems you designed, teams you collaborated with, and notable wins.",
+        logo: "/logo-placeholder.svg",
+        url: "https://example.com",
+        tags: ["Python", "AWS", "Docker", "Kubernetes"],
     },
     {
-        role: "Software Engineer",
-        company: "Nintex",
-        location: "Johannesburg, ZA",
+        role: "Junior Developer",
+        company: "Starter Studio",
+        location: "Your City, Country",
         workload: "Full-time",
-        from: "Jan 2015",
-        to: "May 2016",
-        description: "DevOps focused role - reduced build times from 4 hours to 45 minutes.",
-        logo: "/k2_logo.jpeg",
-        url: "https://www.nintext.com",
-        tags: ["C#", "C++/CLI", "MSSQL"]
-
+        from: "Aug 2019",
+        to: "May 2021",
+        description: "Your first role — the foundational projects, tools, and lessons that shaped your career.",
+        logo: "/logo-placeholder.svg",
+        tags: ["JavaScript", "HTML", "CSS", "Git"],
     },
-    {
-        role: "Founder",
-        company: "GamingVPN",
-        location: "Potchefstroom, ZA",
-        workload: "Full-time",
-        from: "Feb 2013",
-        to: "Jul 2015",
-        description: "GamingVPN provided VPN solutions, mainly used by university students, enabling unrestricted internet access on campus computer networks.",
-        logo: "/gamingvpn_logo.png",
-        tags: ["C#", "ASP.NET MVC", "OpenVPN", "Apache"]
-    }
 ]
 
 const Experience = () => {
@@ -97,7 +47,7 @@ const Experience = () => {
             <div key={index} className="flex items-start bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
-                
+
                 <div className="flex-1" style={{overflowWrap: "anywhere"}}>
                     <div className="flex flex-space-between">
                         <span className="flex-1 font-semibold mb-2 font-heading">{exp.role}</span>

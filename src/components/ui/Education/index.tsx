@@ -2,23 +2,24 @@ import Image from "next/image"
 
 const studies = [
     {
-        name: "Bachelor of Science in Computer Science",
-        company: "North-West University",
-        location: "Potchefstroom, ZA",
-        url: "https://www.nwu.ac.za/",
-        from: "2014",
-        logo: "/nwu_logo.png",
-        description: "Completed my Honours Degree in Computer Science cum laude at the North-West University."
+        name: "Master of Science in Your Field",
+        company: "Your University",
+        location: "City, Country",
+        url: "https://example.com",
+        from: "2018",
+        to: "2020",
+        logo: "/school-placeholder.svg",
+        description: "A short description of your studies, specialization, and notable achievements."
     },
     {
-        name: "Bachelor of Science in Information Technology",
-        company: "North-West University",
-        location: "Potchefstroom, ZA",
-        url: "https://www.nwu.ac.za/",
-        from: "2011",
-        to: "2013",
-        logo: "/nwu_logo.png",
-        description: "Completed my Bachelor's Degree in Information Technology cum laude at the North-West University. Received an award for achieving the highest overall academic score during the three year B.Sc degree."
+        name: "Bachelor of Science in Your Field",
+        company: "Your University",
+        location: "City, Country",
+        url: "https://example.com",
+        from: "2014",
+        to: "2018",
+        logo: "/school-placeholder.svg",
+        description: "A short description of your undergraduate degree, focus area, and academic highlights."
     },
 ]
 
@@ -30,7 +31,7 @@ const Education = () => {
             <div key={index} className="flex items-start bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
                 {exp.url && <a target="_blank" href={exp.url} rel="noopener noreferrer"><Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image></a>}
                 {!exp.url && <Image className="mx-2 rounded-full" src={exp.logo} width={70} height={70} alt="logo"></Image>}
-                
+
                 <div className="flex-1">
                     <div className="mb-3">
                         <span className="font-semibold font-heading">{exp.name}</span>
@@ -53,7 +54,7 @@ const Education = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4">
                                 <path fill="currentColor" d="M9 1v2h6V1h2v2h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1zm11 10H4v8h16zm-9 2v4H6v-4zM7 5H4v4h16V5h-3v2h-2V5H9v2H7z"></path>
                             </svg>
-                            {exp.from} 
+                            {exp.from}
                             {exp.to && <span>- {exp.to}</span> }
                         </span>
                     </div>

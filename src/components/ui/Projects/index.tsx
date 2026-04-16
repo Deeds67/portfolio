@@ -3,76 +3,28 @@ import Tags from "../Tags"
 
 const projects = [
     {
-        company: "Noodle Gallery",
-        date: "Mar 2025",
-        description: "A high-performance, self-hosted photo and video management solution. Features AI-powered search, facial recognition, and mobile apps for iOS and Android.",
-        tags: ["TypeScript", "Svelte", "NestJS", "Flutter", "PostgreSQL", "Python", "Astro", "Docker", "S3"],
-        logo: "/noodle_gallery_logo.png",
-        url: "https://opennoodle.de"
+        company: "Your Flagship Project",
+        date: "Jan 2025",
+        description: "A short description of your most impressive project — what it does, who it's for, and what makes it technically interesting.",
+        tags: ["TypeScript", "React", "Node.js", "PostgreSQL"],
+        logo: "/logo-placeholder.svg",
+        url: "https://example.com"
     },
     {
-        company: "Portfolio",
-        date: "Apr 2024",
-        description: "Built & open sourced this portfolio website",
-        tags: ["React", "Next.js", "TailwindCSS", "TypeScript"],
-        logo: "/linkedinprofilepic.jpeg",
-        url: "https://github.com/Deeds67/portfolio/"
+        company: "Side Project Name",
+        date: "Aug 2024",
+        description: "A second project — perhaps an open-source library, a hackathon winner, or an experiment you shipped.",
+        tags: ["Python", "FastAPI", "Docker"],
+        logo: "/github.png",
+        url: "https://github.com/your-username/your-repo"
     },
     {
-        company: "Rolling-Aggregator",
+        company: "Experiment or Learning Project",
         date: "Mar 2024",
-        description: "Implemented an application that consumes a stream of data and does a 60 second rolling aggregation of the data. Provides the aggregated result in O(1) time.",
-        tags: ["Kotlin", "Ktor", "Concurrency", "Locks"],
+        description: "A learning project that taught you something new — a clone of an existing tool, an algorithmic challenge, or a deep-dive into a new technology.",
+        tags: ["Rust", "Algorithms", "Systems Programming"],
         logo: "/github.png",
-        url: "https://github.com/Deeds67/rolling-aggregator"
-    },
-    {
-        company: "Redis-Clone",
-        date: "Mar 2024",
-        description: "Built a Redis clone in Rust to learn about the internal workings of Redis and the RESP-protocol.",
-        tags: ["Rust", "Redis", "RESP", "Concurrency"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/redis-clone"
-    },
-    {
-        company: "QR-File-Transfer",
-        date: "Oct 2023",
-        description: "Developed a website that enables you to transfer files between devices without an internet connection. Converts files into QR codes.",
-        tags: ["React", "Javascript", "File Compression", "ZLib"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/qr-file-transfer"
-    },
-    {
-        company: "Backup & restore utility",
-        date: "Mar 2023",
-        description: "Built scripts used to spin up a full linux dev environment with all of my required software and custom settings.",
-        tags: ["Bash"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/backup-and-restore"
-    },
-    {
-        company: "Cryptocurrency Arbitrage",
-        date: "Nov 2022",
-        description: "Implemented an algorithm that detected arbitrage between different currencies by representing them in an undirected graph and using the Bellman Ford algorithm to detect negative weight cycles.",
-        tags: ["Scala", "scala-cli", "Algorithms", "Graph traversal"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/cryptocurrency-arbitrage"
-    },
-    {
-        company: "OrderBook parser",
-        date: "Jun 2022",
-        description: "Wrote an OrderBook implementation that would parse very large XML files containing millions of order book entries. Used efficient data structures like PriorityQueues (Heaps) to reduce parsing time to a few seconds.",
-        tags: ["Kotlin", "XML", "Trading", "OrderBook", "Data Structures"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/order-book"
-    },
-    {
-        company: "Candlestick price histories",
-        date: "Jun 2022",
-        description: "Implemented an application that consumed a stream of json, persisted into a time-series database (TimescaleDB), and exposed an endpoint that would summarize this data and extrapolate missing data.",
-        tags: ["Kotlin", "Ktor", "TimescaleDB", "WebSockets", "REST", "Docker"],
-        logo: "/github.png",
-        url: "https://github.com/Deeds67/candlestick"
+        url: "https://github.com/your-username/your-repo"
     },
 ]
 
