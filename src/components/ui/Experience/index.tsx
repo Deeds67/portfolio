@@ -35,7 +35,6 @@ const experiences = [
         to: "May 2024",
         description: "Tresor AI provides companies with a GDPR compliant chat-bot that uses open-source LLM models combined with RAG, enabling companies to have intelligent querying of internal documentation.",
         logo: "/tresor-ai.png",
-        url: "https://www.tresor-ai.com",
         tags: ["Python", "TypeScript", "Llama-Index", "FastAPI", "LLM", "RAG", "Next.js", "TailwindCSS"],
 
     },

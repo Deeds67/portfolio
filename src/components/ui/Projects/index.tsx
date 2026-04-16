@@ -7,17 +7,8 @@ const projects = [
         date: "Mar 2025",
         description: "A high-performance, self-hosted photo and video management solution. Features AI-powered search, facial recognition, and mobile apps for iOS and Android.",
         tags: ["TypeScript", "Svelte", "NestJS", "Flutter", "PostgreSQL", "Python", "Astro", "Docker", "S3"],
-        logo: "/opennoodle_logo.png",
+        logo: "/noodle_gallery_logo.png",
         url: "https://opennoodle.de"
-    },
-    {
-        company: "Pragmatic Interview",
-        date: "Aug 2024",
-        description: "Built an educational platform offering curated questions on all software engineering topics, along with an AI assistant to help people land their dream job as a software engineer.",
-        tags: ["React", "Next.js", "TailwindCSS", "TypeScript", "ChatGPT", "LLM"],
-        logo: "/pi_logo.png",
-        url: "https://www.pragmaticinterview.com",
-        shutdown: true
     },
     {
         company: "Portfolio",
@@ -90,13 +81,12 @@ const Projects = () => {
         <div className="lg:max-w-xl flex flex-col gap-2">
             <h2 className="ml-1 text-lg font-semibold border-l-3 border-blue-500 pl-2">Projects</h2>
             {projects.map((project, index) =>
-            <div key={index} className={`flex bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4 ${project.shutdown ? "opacity-60" : ""}`}>
-                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className={`mx-2 rounded-lg min-w-16 ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image></a>}
-                {!project.url && <Image className={`mx-2 rounded-lg ${project.shutdown ? "grayscale" : ""}`} src={project.logo} width={70} height={70} alt="logo"></Image>}
+            <div key={index} className="flex bg-white shadow-sm hover:shadow-md transition-shadow rounded-xl p-4">
+                {project.url && <a target="_blank" href={project.url} rel="noopener noreferrer"><Image className="mx-2 rounded-lg min-w-16" src={project.logo} width={70} height={70} alt="logo"></Image></a>}
+                {!project.url && <Image className="mx-2 rounded-lg" src={project.logo} width={70} height={70} alt="logo"></Image>}
                 <div className="flex-1 break-words" style={{overflowWrap: "anywhere"}}>
                     <div className="flex items-center gap-2 mb-2">
                         <span className="font-semibold font-heading">{project.company}</span>
-                        {project.shutdown && <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 border border-gray-200">Shut down</span>}
                     </div>
                     <div className="flex gap-3 text-sm mb-3 pr-5 text-slate-700 font-medium">
                         <span className="flex gap-2">
